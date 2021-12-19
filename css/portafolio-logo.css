@@ -1,0 +1,44 @@
+/*ajuste  generales*/
+
+* {box-sizing: border-box;}
+body{ margin: 0; padding: 0; background: rgb(0, 0, 0);}
+img{ width: 100% }
+
+
+/* AJUSTES GEBERALES */
+body{text-align: center; font: 300 20px/1.7; font-family: 'Roboto', sans-serif; background: black;}
+
+
+/* NAVEGATION BAR */        
+.container-nav{ background: rgb(255, 0, 68); height: 70px; width: 100%; }
+    nav{ height: 70px; width: 80%; margin: auto; color: #fff; font-family: Verdana;  display: flex; justify-content: space-between; align-items: center;}
+       nav a{ text-decoration: none; color: #fff; margin-left: 8px; margin-right: 8px; font-size: large;} 
+             a:hover{ color: rgb(0, 0, 0);}
+             
+/* HEADER & LOGO */
+.header{ display: flex; justify-content: center; align-items: center;}
+    .header{ height: 50vh; background: url(../img/header-service.jpg) no-repeat center top; background-size: cover; }
+        .logo-pixel{ width: 150px; height: 150px; padding: 20px; border: 1px solid white; border-radius: 20px; box-shadow:5px tomato; background: white;}
+
+/* SECTION TITLE */
+ h1{ color: rgb(255, 255, 255); font-family:'Roboto', sans-serif; text-transform: uppercase; font-size: 300%; text-align: center;}
+
+ 
+
+/* contenedor de columnas*/
+
+.row{ display: flex; padding: 5px; flex-wrap: wrap;}   /* Flex wreap = Ajuste de columnas por tamaño*/
+.column{ flex: 25%;padding: 5px;}
+    .column img{ margin-top: 5px; }
+
+    .column img:hover{
+        border: 5px solid rgb(255, 0, 132);
+        
+    }
+
+
+
+@media (max-width: 800px) { 
+        .column  { flex: 50%;}                      /*Ajuste de columnas por tamaño*/
+    }   
+
